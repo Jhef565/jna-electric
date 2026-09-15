@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Request a Quote | J&A Electrical Solutions</title>
+<meta name="description" content="Request a quote from J&A Electrical Solutions for automation, access control, or electrical work in Greater Los Angeles.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-bar">
+    <a href="index.html" class="logo">J&amp;A <span>Electrical</span></a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="call-link" href="tel:+13235550134">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        (323) 555-0134
+      </a>
+      <a href="quote.html" class="btn btn-amber" aria-current="page">Request a Quote</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="page-head">
+  <div class="container">
+    <div class="eyebrow">REQUEST A QUOTE</div>
+    <h1 style="margin-bottom: 12px;">Tell us about the job.</h1>
+    <p>The more detail you give us, the more accurate your quote will be. For a system that's down right now, mark it emergency and call us directly — that's faster than the form.</p>
+  </div>
+</div>
+
+<section class="section section-top-rule">
+  <div class="container grid grid-2" style="align-items: start;">
+    <div class="form-panel">
+      <form id="quote-form">
+
+        <div class="form-row">
+          <div class="field">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="field">
+            <label for="company">Company / property (optional)</label>
+            <input type="text" id="company" name="company">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="job-type">Type of job</label>
+          <select id="job-type" name="job-type" required>
+            <option value="" disabled selected>Select the closest match</option>
+            <option>Industrial / commercial automation — new install</option>
+            <option>Industrial / commercial automation — repair or troubleshooting</option>
+            <option>Gate or garage access control — new install</option>
+            <option>Door access control or intercom — new install</option>
+            <option>Access control repair or diagnostics</option>
+            <option>Panel upgrade or electrical infrastructure</option>
+            <option>Not sure — need to discuss</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="location">Job location</label>
+          <input type="text" id="location" name="location" placeholder="Address or neighborhood, city" required>
+          <div class="hint">We currently serve Greater Los Angeles — see the full area on the Contact page.</div>
+        </div>
+
+        <fieldset>
+          <legend>Urgency</legend>
+          <div class="radio-row">
+            <label><input type="radio" name="urgency" value="emergency" required> Emergency — system is down now</label>
+            <label><input type="radio" name="urgency" value="urgent"> Urgent — within a few days</label>
+            <label><input type="radio" name="urgency" value="planned"> Planned project — flexible timing</label>
+          </div>
+        </fieldset>
+        <div class="urgency-note">
+          For an active emergency, this form still reaches us, but calling <a href="tel:+13235550134" style="text-decoration: underline;">(323) 555-0134</a> directly will get a faster response.
+        </div>
+
+        <div class="field">
+          <label for="details">Job details</label>
+          <textarea id="details" name="details" rows="5" placeholder="What's happening with the system, or what are you looking to install?" required></textarea>
+        </div>
+
+        <div class="field">
+          <label for="preferred-contact">Preferred contact method</label>
+          <select id="preferred-contact" name="preferred-contact">
+            <option>Phone call</option>
+            <option>Text message</option>
+            <option>Email</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-amber btn-block">Submit Quote Request</button>
+      </form>
+
+      <div class="form-success">
+        <h3>Request received.</h3>
+        <p style="margin-bottom: 0;">We'll follow up using the contact method you selected, usually within one business day — sooner for emergency requests. For anything time-sensitive, call <a href="tel:+13235550134" style="text-decoration: underline;">(323) 555-0134</a> in the meantime.</p>
+      </div>
+    </div>
+
+    <div>
+      <div class="panel panel-terminal" style="margin-bottom: 20px;">
+        <h3>What happens next</h3>
+        <p>We review your request, and for most jobs, follow up to confirm scope before a site visit and written quote.</p>
+      </div>
+      <div class="panel panel-terminal" style="margin-bottom: 20px;">
+        <h3>In a hurry?</h3>
+        <p>Skip the form and call <a href="tel:+13235550134">(323) 555-0134</a> directly — this line is monitored for emergency access control and automation calls.</p>
+      </div>
+      <div class="panel panel-terminal">
+        <h3>Not sure what you need?</h3>
+        <p>Select "Not sure — need to discuss" as the job type and describe what's happening. We'll help you figure out the right scope.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">J&amp;A <span>Electrical</span></div>
+        <p style="color: var(--gray-400); max-width: 32ch;">No shortcuts. Just solutions. C10 licensed electrical contracting for automation and access control systems across Greater Los Angeles.</p>
+      </div>
+      <div>
+        <h4>NAVIGATE</h4>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>CONTACT</h4>
+        <ul>
+          <li><a href="tel:+13235550134">(323) 555-0134</a></li>
+          <li><a href="mailto:info@jna-electric.com">info@jna-electric.com</a></li>
+          <li>Echo Park, Los Angeles, CA</li>
+        </ul>
+      </div>
+      <div>
+        <h4>LICENSE</h4>
+        <ul>
+          <li>CA CSLB C10 #[license no.]</li>
+          <li>Licensed &amp; Insured</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 J&amp;A Electrical Solutions. All rights reserved.</span>
+      <span>Serving Greater Los Angeles</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-call-bar">
+  <a class="call" href="tel:+13235550134">Call Now</a>
+  <a class="quote" href="quote.html">Request Quote</a>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
