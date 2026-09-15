@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FAQ | JNA Electrical Solutions</title>
-<meta name="description" content="Answers to common questions about J&A Electrical Solutions' automation, access control, and electrical services in Los Angeles.">
+<title>Request a Quote | JNA Electrical Solutions</title>
+<meta name="description" content="Request a quote from J&A Electrical Solutions for automation, access control, or electrical work in Greater Los Angeles.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
@@ -18,7 +18,7 @@
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
       <a href="about.html">About</a>
-      <a href="faq.html" aria-current="page">FAQ</a>
+      <a href="faq.html">FAQ</a>
       <a href="contact.html">Contact</a>
     </nav>
     <div class="header-actions">
@@ -36,64 +36,107 @@
 
 <div class="page-head">
   <div class="container">
-    <div class="eyebrow">FAQ</div>
-    <h1 style="margin-bottom: 12px;">Questions we hear before the first visit.</h1>
-    <p>Can't find what you're looking for? <a href="contact.html" style="text-decoration: underline; text-underline-offset: 3px;">Contact us</a> directly.</p>
+    <div class="eyebrow">REQUEST A QUOTE</div>
+    <h1 style="margin-bottom: 12px;">Tell us about the job.</h1>
+    <p>The more detail you give us, the more accurate your quote will be. For a system that's down right now, mark it emergency and call us directly — that's faster than the form.</p>
   </div>
 </div>
 
 <section class="section section-top-rule">
-  <div class="container" style="max-width: 820px;">
+  <div class="container grid grid-2" style="align-items: start;">
+    <div class="form-panel">
+      <form id="quote-form">
 
-    <details class="faq-item" open>
-      <summary><span>Do you work on both automation systems and access control, or should I hire separately?</span><span class="icon"></span></summary>
-      <p>Both, on the same visit where possible. JNA was built specifically so facilities don't need one contractor for control panels and another for gate or door access — the same licensed crew handles the automation, the access system, and the electrical work behind them.</p>
-    </details>
+        <div class="form-row">
+          <div class="field">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="field">
+            <label for="company">Company / property (optional)</label>
+            <input type="text" id="company" name="company">
+          </div>
+        </div>
 
-    <details class="faq-item">
-      <summary><span>What areas do you serve?</span><span class="icon"></span></summary>
-      <p>We're based in Echo Park and serve Greater Los Angeles, including Koreatown, Silver Lake, Los Feliz, Palms, and Culver City. See the full service area on our <a href="contact.html" style="text-decoration: underline; text-underline-offset: 3px;">Contact page</a>, or ask when you request a quote — we can usually confirm coverage right away.</p>
-    </details>
+        <div class="form-row">
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
 
-    <details class="faq-item">
-      <summary><span>Are you licensed and insured?</span><span class="icon"></span></summary>
-      <p>Yes. JNA Electrical Solutions holds an active C10 electrical contractor license with the California CSLB, and carries general liability insurance. A certificate of insurance is available on request for property managers and general contractors.</p>
-    </details>
+        <div class="field">
+          <label for="job-type">Type of job</label>
+          <select id="job-type" name="job-type" required>
+            <option value="" disabled selected>Select the closest match</option>
+            <option>Industrial / commercial automation — new install</option>
+            <option>Industrial / commercial automation — repair or troubleshooting</option>
+            <option>Gate or garage access control — new install</option>
+            <option>Door access control or intercom — new install</option>
+            <option>Access control repair or diagnostics</option>
+            <option>Panel upgrade or electrical infrastructure</option>
+            <option>Not sure — need to discuss</option>
+          </select>
+        </div>
 
-    <details class="faq-item">
-      <summary><span>How fast can you respond to a system that's down?</span><span class="icon"></span></summary>
-      <p>For an access control or automation system that's fully down, mark your request as emergency when you request a quote or call our line directly — we prioritize same-day response for facilities that can't operate without the system running.</p>
-    </details>
+        <div class="field">
+          <label for="location">Job location</label>
+          <input type="text" id="location" name="location" placeholder="Address or neighborhood, city" required>
+          <div class="hint">We currently serve Greater Los Angeles — see the full area on the Contact page.</div>
+        </div>
 
-    <details class="faq-item">
-      <summary><span>Do you provide written quotes before starting work?</span><span class="icon"></span></summary>
-      <p>Always. We scope the job — by site visit for most installs and larger repairs, or by phone and photos for smaller diagnostic calls — and send a written quote before anything is scheduled.</p>
-    </details>
+        <fieldset>
+          <legend>Urgency</legend>
+          <div class="radio-row">
+            <label><input type="radio" name="urgency" value="emergency" required> Emergency — system is down now</label>
+            <label><input type="radio" name="urgency" value="urgent"> Urgent — within a few days</label>
+            <label><input type="radio" name="urgency" value="planned"> Planned project — flexible timing</label>
+          </div>
+        </fieldset>
+        <div class="urgency-note">
+          For an active emergency, this form still reaches us, but calling <a href="tel:+13235550134" style="text-decoration: underline;">(323) 555-0134</a> directly will get a faster response.
+        </div>
 
-    <details class="faq-item">
-      <summary><span>Can you work around our facility's operating hours?</span><span class="icon"></span></summary>
-      <p>In most cases, yes. Panel and access system work is often scheduled after-hours or on weekends for facilities that can't have downtime during business hours — let us know your constraints when you request a quote.</p>
-    </details>
+        <div class="field">
+          <label for="details">Job details</label>
+          <textarea id="details" name="details" rows="5" placeholder="What's happening with the system, or what are you looking to install?" required></textarea>
+        </div>
 
-    <details class="faq-item">
-      <summary><span>Do you handle both new installs and repairs on existing systems?</span><span class="icon"></span></summary>
-      <p>Yes. A large share of our work is diagnosing and repairing existing access control and automation systems that other contractors couldn't fully resolve, alongside new installs and upgrades.</p>
-    </details>
+        <div class="field">
+          <label for="preferred-contact">Preferred contact method</label>
+          <select id="preferred-contact" name="preferred-contact">
+            <option>Phone call</option>
+            <option>Text message</option>
+            <option>Email</option>
+          </select>
+        </div>
 
-    <details class="faq-item">
-      <summary><span>How do I get an exact price?</span><span class="icon"></span></summary>
-      <p>Pricing depends on scope, so we don't quote flat rates online. Submit a <a href="quote.html" style="text-decoration: underline; text-underline-offset: 3px;">quote request</a> with your job type, location, and urgency, and we'll follow up with next steps — usually a call or site visit before a written quote.</p>
-    </details>
+        <button type="submit" class="btn btn-amber btn-block">Submit Quote Request</button>
+      </form>
 
-  </div>
-</section>
+      <div class="form-success">
+        <h3>Request received.</h3>
+        <p style="margin-bottom: 0;">We'll follow up using the contact method you selected, usually within one business day — sooner for emergency requests. For anything time-sensitive, call <a href="tel:+13235550134" style="text-decoration: underline;">(323) 555-0134</a> in the meantime.</p>
+      </div>
+    </div>
 
-<section class="cta-band">
-  <div class="container">
-    <h2>Still have questions?</h2>
-    <div class="actions">
-      <a href="tel:+16264537523" class="btn btn-amber">Call (626) 453-7523</a>
-      <a href="quote.html" class="btn btn-outline">Request a Quote</a>
+    <div>
+      <div class="panel panel-terminal" style="margin-bottom: 20px;">
+        <h3>What happens next</h3>
+        <p>We review your request, and for most jobs, follow up to confirm scope before a site visit and written quote.</p>
+      </div>
+      <div class="panel panel-terminal" style="margin-bottom: 20px;">
+        <h3>In a hurry?</h3>
+        <p>Skip the form and call <a href="tel:+16264537523">(626) 453-7523</a> directly, this line is monitored for emergency calls.</p>
+      </div>
+      <div class="panel panel-terminal">
+        <h3>Not sure what you need?</h3>
+        <p>Select "Not sure — need to discuss" as the job type and describe what's happening. We'll help you figure out the right scope.</p>
+      </div>
     </div>
   </div>
 </section>
