@@ -30,16 +30,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
   
-// Google Ads: count taps on phone links as a conversion
-document.querySelectorAll('a[href^="tel:"]').forEach(function (link) {
-  link.addEventListener('click', function () {
-    if (typeof gtag !== 'function') return; // tag blocked or not loaded: the call still works
-    gtag('event', 'conversion', {
-      'send_to': 'AW-18493287200/mjZeCLSnpZAdEKDWpPJE'
-    });
-  });
-});
-  
   // Quote form submit (front-end only — wire to a form backend/email service before launch)
   var form = document.querySelector('#quote-form');
   if (form) {
