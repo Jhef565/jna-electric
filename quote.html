@@ -3,20 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18493287200"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-18493287200');
-</script>
-<script>
-  gtag('config', 'AW-18493287200/JJa3CIvwsZAdEKDWpPJE', {
-    'phone_conversion_number': '6264537523'
-  });
-</script>
 <title>Request a Quote | JNA Electrical Solutions</title>
 <meta name="description" content="Request a quote from J&A Electrical Solutions for automation, access control, or electrical work in Greater Los Angeles.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -59,7 +45,11 @@
 <section class="section section-top-rule">
   <div class="container grid grid-2" style="align-items: start;">
     <div class="form-panel">
-      <form id="quote-form">
+      <form id="quote-form" novalidate>
+        <input type="hidden" name="access_key" value="7f675acf-ea6c-4e29-877d-31929793ae1f">
+        <input type="hidden" name="subject" value="New quote request - JNA Electrical Solutions">
+        <input type="hidden" name="from_name" value="jna-electric.com quote form">
+        <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none">
 
         <div class="form-row">
           <div class="field">
@@ -94,6 +84,7 @@
             <option>Access control repair or diagnostics</option>
             <option>Panel upgrade or electrical infrastructure</option>
             <option>Not sure — need to discuss</option>
+            <option>Other</option>
           </select>
         </div>
 
@@ -112,7 +103,7 @@
           </div>
         </fieldset>
         <div class="urgency-note">
-          For an active emergency, this form still reaches us, but calling <a href="tel:+13235550134" style="text-decoration: underline;">(323) 555-0134</a> directly will get a faster response.
+          For an active emergency, this form still reaches us, but calling <a href="tel:+16264537523" style="text-decoration: underline;">(626) 453-7523</a> directly will get a faster response.
         </div>
 
         <div class="field">
@@ -129,6 +120,7 @@
           </select>
         </div>
 
+        <div id="form-error" role="alert" style="display:none; margin-bottom:12px; color:#b3261e;"></div>
         <button type="submit" class="btn btn-amber btn-block">Submit Quote Request</button>
       </form>
 
@@ -149,7 +141,7 @@
       </div>
       <div class="panel panel-terminal">
         <h3>Not sure what you need?</h3>
-        <p>Select "Not sure — need to discuss" as the job type and describe what's happening. We'll help you figure out the right scope.</p>
+        <p>Select "Not sure or need to discuss" as the job type and describe what's happening. We'll help you figure out the right scope.</p>
       </div>
     </div>
   </div>
@@ -200,5 +192,6 @@
 </div>
 
 <script src="js/main.js"></script>
+<script src="js/quote.js"></script>
 </body>
 </html>
